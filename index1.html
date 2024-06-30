@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="#">
+      <h2>Login</h2>
+        <div class="input-field">
+        <input type="email" required id="login-Email">
+        <label>Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" required id="login-Password">
+        <label>Enter your password</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+     <button type="button" id="login-Btn">Log In</button>
+    </form>
+  </div>
+  <script>
+        let loginBtn=document.getElementById('login-Btn')
+        let loginEmail=document.getElementById('loginEmail')
+        let loginPassword=document.getElementById('loginPassword')
+        loginBtn.addEventListener('click',function () {
+            let signUpEmail=document.getElementById('signUpEmail')
+            let signUpPassword=document.getElementById('signUpPassword')
+          if(signUpEmail==loginEmail && signUpPassword==loginPassword){
+            alert('Your Account Has Login Successfully');
+            window.location.href='index2.html'
+
+          }
+          else{
+            alert('Please Enter Correct Input Field!')
+          }
+        })
+    
+  </script>
+</body>
+</html>
