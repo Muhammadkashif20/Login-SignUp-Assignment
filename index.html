@@ -37,12 +37,16 @@
     let signUpEmail=document.getElementById('signUpEmail')
     let signUpPassword=document.getElementById('signUpPassword')
     function signUp() {
-        localStorage.setItem('UserName',signUpUser.value)
-        localStorage.setItem('UserEmail',signUpEmail.value)
-        localStorage.setItem('UserPassword',signUpPassword.value) 
-        window.location.href='index1.html'
-
+      if(!signUpUser.value || !signUpEmail.value || !signUpPassword.value){
+        alert('please enter all input field!')
+        return
       }
+        localStorage.setItem('Name',signUpUser.value)
+        localStorage.setItem('Email',signUpEmail.value)
+        localStorage.setItem('Password',signUpPassword.value)
+        window.location.href='index1.html' 
+      }
+      
   </script>
 </body>
 </html>
