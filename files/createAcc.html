@@ -29,24 +29,9 @@
         </label>
         <a href="#">Forgot password?</a>
       </div>
-      <button  type="button" onclick="signUp()">Sign Up</button>
+      <button  type="button" id="signUp">Sign Up</button>
     </form>
   </div>
-  <script>
-    let signUpUser=document.getElementById('signUpUser')
-    let signUpEmail=document.getElementById('signUpEmail')
-    let signUpPassword=document.getElementById('signUpPassword')
-    function signUp() {
-      if(!signUpUser.value || !signUpEmail.value || !signUpPassword.value){
-        alert('please enter all input field!')
-        return
-      }
-        localStorage.setItem('Name',signUpUser.value)
-        localStorage.setItem('Email',signUpEmail.value)
-        localStorage.setItem('Password',signUpPassword.value)
-        window.location.href='index1.html' 
-      }
-      
-  </script>
+  <script type="module" src="firebase.mjs"></script>
 </body>
 </html>
