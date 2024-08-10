@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SignUp Form </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="#">
+      <h2>SignUp</h2>
+      <div class="input-field">
+        <input type="text" required id="signUpUser">
+        <label>Enter your Name</label>
+      </div>
+        <div class="input-field">
+        <input type="email" required id="signUpEmail">
+        <label>Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" required id="signUpPassword">
+        <label>Enter your password</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button  type="button" onclick="signUp()">Sign Up</button>
+    </form>
+  </div>
+  <script>
+    let signUpUser=document.getElementById('signUpUser')
+    let signUpEmail=document.getElementById('signUpEmail')
+    let signUpPassword=document.getElementById('signUpPassword')
+    function signUp() {
+      if(!signUpUser.value || !signUpEmail.value || !signUpPassword.value){
+        alert('please enter all input field!')
+        return
+      }
+        localStorage.setItem('Name',signUpUser.value)
+        localStorage.setItem('Email',signUpEmail.value)
+        localStorage.setItem('Password',signUpPassword.value)
+        window.location.href='index1.html' 
+      }
+      
+  </script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #btn-logout:hover {
+      cursor: pointer;
+    }
+    .h1{
+      margin-top: 3rem; 
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    #cards{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 1rem;
+      
+    }
+    .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11,.card12{
+      width: calc(25%);
+      border: 1px solid #DFDFDF;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      margin-top: 3rem;
+    }
+    @media only screen and (max-width:360px){
+      .h1{
+        text-align: center;
+        font-size: 25px;
+        margin-bottom:1rem;
+      }
+      #cards{
+        flex-direction: column;
+      }
+      .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11,.card12{
+        width: 19rem;
+        margin-left: 1.8rem;
+        margin-top: 2rem;
+        
+      }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px){
+
+      .h1{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom:2rem;
+      }
+
+      #cards{
+        display: flex;
+        flex-wrap: wrap;  
+        gap: 1rem;
+      }
+      .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11,.card12{
+        width: 40%;
+        margin-top: 2rem; 
+        box-sizing: border-box;
+      }
+
+    }
+
+
+  </style>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+     <div class="main">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Dasboard</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+            <button class="btn btn-outline-success" type="submit"   id="btn-logout">
+              Logout
+            </button>
+        </div>
+      </div>
+    </nav>
+      <h1 class="h1">
+        Welcome To Dashboard
+      </h1>
+     <div id="cards">
+      <div class="card1" >
+        <img src="img/img1.jfif" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Sea Bridge</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a></div></div>
+      <div class="card2" >
+        <img src="img/img11.avif" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Street View</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a></div></div>        
+      <div class="card3" >
+        <img src="img/img5" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">SunSet View</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a></div></div>
+      
+      <div class="card4" >
+        <img src="img/img12.avif" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Laptop Working</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a></div></div>
+
+   
+      <div class="card5" >
+        <img src="img/img6.avif" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Pc Setup</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a></div></div>
+   
+      <div class="card6">
+        <img src="img/IMG15.avif" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Coding Time</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card7" >
+        <img src="img/burger.avif" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Zinger Burger</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a></div></div>
+
+      <div class="card8" >
+        <img src="img/pizza.avif" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Beautiful Pizza</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a></div></div>
+     
+      <div class="card9" >
+        <img src="img/noddles.avif" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Spicy Noddles</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a></div></div>
+      <div class="card10" >
+        <img src="img/modern1.avif" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Modern House</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a></div></div>
+       
+      <div class="card11" >
+        <img src="img/modern2.avif" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Beautiful Buiding</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a></div></div>     
+      <div class="card12" >
+        <img src="img/modern4.avif" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Office View</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a></div></div></div>
+    <script>
+      var btn = document.getElementById("btn-logout");
+      btn.addEventListener("click", function () {
+        window.location.href = "index1.html";
+      });
+    </script>
+  </body>
+</html>
